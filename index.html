@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#007BFF" />
+    <meta name="description" content="Xorvin — The World's Premier Global Technology Community. Join hackathons, competitions, workshops, and connect with innovators worldwide." />
+    <meta name="keywords" content="technology community, hackathon, coding competition, AI challenge, cybersecurity CTF, workshop, tech conference, open source" />
+    <meta name="author" content="Xorvin" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xorvin.com/" />
+    <meta property="og:title" content="Xorvin — Innovate. Compete. Elevate." />
+    <meta property="og:description" content="The world's premier global technology community for innovators, hackers, and builders." />
+    <meta property="og:image" content="https://xorvin.com/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@xorvin" />
+    <meta name="twitter:title" content="Xorvin — Innovate. Compete. Elevate." />
+    <meta name="twitter:description" content="The world's premier global technology community for innovators, hackers, and builders." />
+    <meta name="twitter:image" content="https://xorvin.com/og-image.png" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Exo+2:ital,wght@1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Xorvin — Innovate. Compete. Elevate.</title>
+    <link rel="canonical" href="https://xorvin.com/" />
+
+    <!-- Google Analytics 4 — only loads when VITE_GA_MEASUREMENT_ID is set at build time -->
+    <!-- This script is replaced by the Vite build with the actual env value -->
+    <!-- To enable: set VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX in your .env.production -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(error => {
+            console.error('ServiceWorker registration failed: ', error);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
