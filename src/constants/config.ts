@@ -10,7 +10,7 @@ export const APP_CONFIG = {
   mission:     'Empowering innovators through technology, collaboration, and competition.',
   vision:      'To become one of the world\'s most trusted technology communities.',
   description: 'Xorvin is a global technology community headquartered in India, dedicated to empowering innovators through competitions, collaboration, and continuous learning.',
-  url:         'https://xorvin.com',
+  url:         'https://xorvin.onrender.com',
   email:       'official.xorvin@gmail.com',
   foundedYear: 2026,
   country:     'India',
