@@ -71,7 +71,7 @@ export default function AmbassadorDashboard() {
     },
   });
 
-  const referralLink = ambassador ? `https://xorvin.com/join?ref=${ambassador.referral_code}` : '—';
+  const referralLink = ambassador ? `https://xorvin.onrender.com/join?ref=${ambassador.referral_code}` : '—';
   const convertedReferrals = referrals?.filter(r => r.converted) ?? [];
 
   const copyLink = async () => {

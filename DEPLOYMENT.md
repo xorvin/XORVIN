@@ -23,7 +23,7 @@ VITE_SUPABASE_URL=https://YOUR_PROJECT_REF.supabase.co
 VITE_SUPABASE_ANON_KEY=your-anon-key-here
 
 # App URL (used for SEO, OG tags, verification codes)
-VITE_APP_URL=https://xorvin.com
+VITE_APP_URL=https://xorvin.onrender.com
 
 # Google Analytics 4 (optional — leave blank to disable tracking)
 VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
@@ -74,8 +74,8 @@ In Supabase Dashboard → Auth → Settings:
 
 - [ ] Enable **Google OAuth** provider (add Client ID + Secret)
 - [ ] Enable **GitHub OAuth** provider (add Client ID + Secret)
-- [ ] Set **Site URL**: `https://xorvin.com`
-- [ ] Add **Redirect URLs**: `https://xorvin.com/auth/callback`
+- [ ] Set **Site URL**: `https://xorvin.onrender.com`
+- [ ] Add **Redirect URLs**: `https://xorvin.onrender.com/auth/callback`
 - [ ] Disable email confirmations if using social-only auth (optional)
 - [ ] Set SMTP provider for magic link / password reset emails
 
@@ -134,7 +134,7 @@ npx vercel --prod
 
 ## 8. Post-Deployment Verification
 
-- [ ] Visit `https://xorvin.com` — homepage loads with real data
+- [ ] Visit `https://xorvin.onrender.com` — homepage loads with real data
 - [ ] Test Google OAuth login flow
 - [ ] Register a new user and verify profile is created
 - [ ] Visit `/events` — events load from Supabase
@@ -144,7 +144,7 @@ npx vercel --prod
 - [ ] Login as `moderator` — verify Reports queue loads
 - [ ] Run Lighthouse audit: target Score ≥ 90 across all categories
 - [ ] Submit sitemap.xml to Google Search Console
-- [ ] Verify robots.txt is accessible at `https://xorvin.com/robots.txt`
+- [ ] Verify robots.txt is accessible at `https://xorvin.onrender.com/robots.txt`
 
 ---
 
@@ -161,7 +161,7 @@ npx vercel --prod
 ## 10. Google Search Console
 
 1. Verify domain ownership via DNS TXT record
-2. Submit sitemap: `https://xorvin.com/sitemap.xml`
+2. Submit sitemap: `https://xorvin.onrender.com/sitemap.xml`
 3. Request indexing for key pages:
    - `/`
    - `/events`
